@@ -14,7 +14,7 @@ function App() {
 
   // useEffect for initial map
   useEffect(async () => {
-    const data = await location('timobrien.dev')
+    const data = await location('timobrien.dev', false)
     setLocationData(data)
   }, [])
 
