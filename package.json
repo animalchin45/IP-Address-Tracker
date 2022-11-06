@@ -31,11 +31,8 @@
     "google-map-react": "^2.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-modal": "^3.14.3",
-    "react-responsive": "^8.2.0",
     "react-script": "^2.0.5",
-    "react-scripts": "4.0.3",
-    "uuid": "^8.3.2"
+    "react-scripts": "4.0.3"
   },
   "scripts": {
     "build": "webpack --config webpack.production.config.js",
