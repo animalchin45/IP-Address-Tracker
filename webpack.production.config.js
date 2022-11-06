@@ -2,7 +2,8 @@ const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const Dotenv = require('dotenv-webpack')
+const webpack = require('webpack')
+const dotenv = require('dotenv')
 
 module.exports = {
   entry: './src/index.js',
@@ -72,6 +73,8 @@ module.exports = {
       description: 'Find your lost soul.',
       favicon: './src/img/favicon-32x32.png',
     }),
-    new Dotenv(),
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify(process.env),
+    }),
   ],
 }
