@@ -1,0 +1,34 @@
+.search {
+  display: flex;
+
+  & input {
+    border: none;
+    border-radius: 1.5rem 0 0 1.5rem;
+    height: 5.8rem;
+    outline: none;
+    padding: $space-small;
+    position: relative;
+    width: 49.7rem;
+  }
+  & button {
+    background-color: #000000;
+    border: none;
+    border-radius: 0 1.5rem 1.5rem 0;
+    cursor: pointer;
+    height: 5.8rem;
+    transition: background-color $fade ease-in-out;
+    width: 5.8rem;
+
+    &:hover {
+      background-color: $color-dark-gray;
+    }
+  }
+}
+
+@media (max-width: $mobile-break) {
+  .search {
+    & input {
+      width: 26.9rem;
+    }
+  }
+}

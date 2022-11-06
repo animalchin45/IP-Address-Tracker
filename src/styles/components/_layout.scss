@@ -1,0 +1,31 @@
+main {
+  display: grid;
+  grid-template-rows: 28rem auto;
+  min-height: 100vh;
+  position: relative;
+}
+
+header {
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 12.3rem 5.8rem 16.1rem;
+  justify-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+section {
+  z-index: -1;
+}
+
+@media (max-width: $mobile-break) {
+  main {
+    grid-template-rows: 30rem auto;
+  }
+
+  header {
+    grid-template-rows: 12.3rem 5.8rem 29.4rem;
+  }
+}

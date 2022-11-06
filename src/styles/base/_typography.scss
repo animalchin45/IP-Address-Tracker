@@ -1,0 +1,60 @@
+// font sizes
+$xsmall-font-size: 1rem;
+$small-font-size: 1.2rem;
+$default-font-size: 1.8rem;
+$smedium-font-size: 2rem;
+$medium-font-size: 2.6rem;
+$large-font-size: 3rem;
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-VariableFont_wght.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-VariableFont_wght.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-VariableFont_wght.ttf');
+  font-weight: 700;
+}
+
+// font settings
+
+body {
+  font-family: 'Rubik', sans-serif;
+  color: $color-very-dark-gray;
+  font-size: $default-font-size;
+  font-weight: 400;
+}
+
+h1 {
+  color: $color-white;
+  font-size: $large-font-size;
+  font-weight: 500;
+}
+
+h2 {
+  color: rgba($color-dark-gray, 1);
+  font-size: $small-font-size;
+}
+
+p {
+  font-size: $medium-font-size;
+  font-weight: 500;
+}
+
+@media (max-width: $mobile-break) {
+  h2 {
+    font-size: $xsmall-font-size;
+  }
+
+  p {
+    font-size: $smedium-font-size;
+  }
+}
